@@ -1,0 +1,34 @@
+{
+  "type": "EcosystemRelationship",
+  "mppVersion": "0.1",
+  "id": "urn:uuid:52d115ef-b83e-44fa-a962-73ec548e91a2",
+  "sourceEcosystem": {
+    "id": "urn:mpp:ecosystem:fifa",
+    "name": "FIFA"
+  },
+  "relationshipType": "delegatesAssertionAuthorityTo",
+  "targetEcosystem": {
+    "id": "urn:mpp:ecosystem:rfef",
+    "name": "Royal Spanish Football Federation"
+  },
+  "assertedByParticipant": {
+    "id": "urn:mpp:participant:fifa-authorised-system",
+    "roles": [
+      "asserter"
+    ]
+  },
+  "relationshipScope": {
+    "participationTypes": [
+      "https://fifa.example.org/mpp/participation-types/referee-development",
+      "https://fifa.example.org/mpp/participation-types/coach-education"
+    ],
+    "meaningProfiles": [
+      "https://fifa.example.org/mpp/meaning-profiles/recognised-football-development/v1"
+    ],
+    "requiredVerificationOutcomes": [
+      "verified"
+    ]
+  },
+  "effectiveFrom": "2026-01-01T00:00:00Z",
+  "recordCreationTimestamp": "2026-08-05T12:00:00Z"
+}

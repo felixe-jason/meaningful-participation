@@ -1,0 +1,49 @@
+{
+  "type": "ParticipationRecord",
+  "mppVersion": "0.1",
+  "id": "urn:uuid:9f2c1d84-6a3e-4a5b-8c17-2be0f4d9a731",
+  "ecosystem": {
+    "id": "urn:mpp:ecosystem:01K2M4PQXR7T9V0C3E5G8H1J4N",
+    "name": "U Media"
+  },
+  "participants": [
+    {
+      "id": "urn:umedia:participant:7c9a1f2e4b6d8035",
+      "roles": [
+        "supporter"
+      ]
+    },
+    {
+      "id": "urn:mpp:ecosystem:01K2M4PQXR7T9V0C3E5G8H1J4N",
+      "roles": [
+        "asserter"
+      ]
+    }
+  ],
+  "participationType": {
+    "id": "https://umedia.org/mpp/participation-types/touchpoint-support",
+    "name": "Touchpoint support"
+  },
+  "participationDescription": "Financially supported a media Touchpoint published by a participating outlet.",
+  "commitmentClasses": [
+    "capital"
+  ],
+  "meaningProfile": {
+    "id": "https://umedia.org/mpp/meaning-profiles/touchpoint-support/v1",
+    "version": "1.0"
+  },
+  "participationTimestamp": "2026-08-08T09:41:00Z",
+  "recordCreationTimestamp": "2026-08-08T09:41:06Z",
+  "evidence": [
+    "urn:uuid:1a7d5e93-08bc-4f21-9d64-3e5c8b0af217"
+  ],
+  "context": {
+    "outlet": "Vijesti",
+    "touchpointId": "t3",
+    "currency": "EUR",
+    "amount": "1.00"
+  },
+  "privacy": {
+    "recordVisibility": "private"
+  }
+}
