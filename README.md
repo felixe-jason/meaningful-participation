@@ -2,8 +2,7 @@
 
 Open standards for representing Meaningful Participation across digital ecosystems.
 
-[![Validate](https://github.com/felixe-jason/meaningful-participation/actions/workflows/validate.yml/badge.svg)](https://github.com/felixe-jason/meaningful-participation/actions/workflows/validate.yml)
-&nbsp;·&nbsp; **Status:** draft v0.1 &nbsp;·&nbsp; **Licence:** Apache 2.0
+**Status:** draft v0.1 &nbsp;·&nbsp; **Licence:** Apache 2.0
 
 The Meaningful Participation Reference Architecture (MPRA) and Meaningful Participation Protocol (MPP) provide an open framework for representing Meaningful Participation in a portable, interoperable and independently verifiable way.
 
@@ -28,17 +27,17 @@ A Participation Record states what happened. It never states what that is worth.
   "type": "ParticipationRecord",
   "mppVersion": "0.1",
   "id": "urn:uuid:9f2c1d84-6a3e-4a5b-8c17-2be0f4d9a731",
-  "ecosystem": { "id": "urn:mpp:ecosystem:01K2M4PQXR7T9V0C3E5G8H1J4N", "name": "U Media" },
+  "ecosystem": "urn:mpp:ecosystem:01JQ4C6AQ9H9H30C27Y4HPRT52",
   "participants": [
-    { "id": "urn:umedia:participant:7c9a1f2e4b6d8035", "roles": ["supporter"] },
-    { "id": "urn:mpp:ecosystem:01K2M4PQXR7T9V0C3E5G8H1J4N", "roles": ["asserter"] }
+    { "id": "https://orcid.org/0000-0002-1825-0097", "roles": ["reviewer"] },
+    { "id": "https://journal.example.org/identifiers/editorial-system", "roles": ["asserter"] }
   ],
-  "participationType": "https://umedia.org/mpp/participation-types/touchpoint-support",
-  "participationDescription": "Financially supported a media Touchpoint published by a participating outlet.",
-  "commitmentClasses": ["capital"],
-  "meaningProfile": "https://umedia.org/mpp/meaning-profiles/touchpoint-support/v1",
-  "participationTimestamp": "2026-08-08T09:41:00Z",
-  "recordCreationTimestamp": "2026-08-08T09:41:06Z"
+  "participationType": "https://example.org/mpp/participation-types/peer-review",
+  "participationDescription": "Completed a substantive review of a submitted research paper.",
+  "commitmentClasses": ["effort", "knowledge", "standing"],
+  "meaningProfile": "https://example.org/mpp/meaning-profiles/verified-peer-review/v1",
+  "participationTimestamp": "2026-07-28T13:15:00Z",
+  "recordCreationTimestamp": "2026-07-28T13:22:14Z"
 }
 ```
 
@@ -86,9 +85,3 @@ meaningful — those require ecosystem-specific evaluation.
 - sport
 - volunteering
 - many other participatory ecosystems
-
-## Implementations
-
-- **U Media** — a credibility-driven media ecosystem, and the first implementation of these ideas.
-
-If you are building on MPP, open a pull request adding yourself here.
