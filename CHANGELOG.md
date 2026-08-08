@@ -8,11 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 - `schemas/` — the two JSON Schemas as standalone files, extracted from `SPECIFICATION.md`.
   These are now the machine-readable source of truth.
-- `examples/` — validating examples: a media participation record, a peer review record, a minimal
-  record and an ecosystem relationship, plus `examples/invalid/` fixtures that must be rejected.
-- `validator/` — a dependency-light structural validator (`npm test`).
-- Continuous integration validating every example and every invalid fixture on each push and pull
-  request, so the specification and the schemas cannot silently diverge.
+- `examples/` — examples that validate against the schemas: a media participation record, a peer
+  review record, a minimal record and an ecosystem relationship.
 - `CONTRIBUTING.md` and `GOVERNANCE.md`.
 
 ## [0.1] — draft

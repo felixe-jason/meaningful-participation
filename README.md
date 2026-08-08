@@ -50,28 +50,23 @@ No score, no reputation, no reward — those belong to whichever ecosystem reads
 | `SPECIFICATION.md` | The normative protocol specification |
 | `MPRA.md` | The reference architecture: Identity, Credentials, Participation, Interpretation, Incentives |
 | `schemas/` | JSON Schemas for each Protocol Object — the machine-readable source of truth |
-| `examples/` | Validating examples, plus `invalid/` fixtures that must be rejected |
-| `validator/` | A structural validator for MPP objects |
+| `examples/` | Examples that validate against the schemas |
 | `CONTRIBUTING.md` | How to propose changes |
 | `GOVERNANCE.md` | How the protocol is stewarded, and how that should change |
 | `CHANGELOG.md` | What changed between drafts |
 
 ## Validating your objects
 
-```bash
-npm install
-node validator/validate.mjs path/to/your-record.json
-```
-
-Or check everything in the repository:
+The schemas are standard JSON Schema (draft 2020-12), so any conformant validator will do. For
+example:
 
 ```bash
-npm test
+npx ajv-cli validate -s schemas/participation-record.schema.json -d examples/media-participation.json
 ```
 
-The validator selects a schema from the object's `type` and checks serialisation only. It does not
-resolve identifiers, verify signatures or evaluate whether the participation was genuinely
-meaningful — those require ecosystem-specific evaluation.
+Select the schema using the object's `type`. Validation is structural only — it checks
+serialisation, not whether identifiers resolve, signatures verify, or the participation was
+genuinely meaningful. Those require ecosystem-specific evaluation.
 
 ## Potential application domains include:
 

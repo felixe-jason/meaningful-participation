@@ -25,18 +25,15 @@ awkward.
 - **Schemas are the source of truth.** `schemas/*.schema.json` are the machine-readable definition.
   If you change a schema, update the corresponding section of `SPECIFICATION.md` in the same pull
   request so the two never drift.
-- **Every example must validate.** Run the validator locally:
+- **Every example must validate.** The schemas are standard JSON Schema (draft 2020-12), so any
+  conformant validator will do:
 
   ```bash
-  npm install
-  npm test
+  npx ajv-cli validate -s schemas/participation-record.schema.json -d examples/media-participation.json
   ```
 
-  CI runs the same two checks on every pull request: every file in `examples/` must validate, and
-  every file in `examples/invalid/` must be rejected.
-
-- **Add a fixture with a schema change.** If you tighten a rule, add a file to `examples/invalid/`
-  demonstrating what is now rejected.
+- **Add an example with a schema change.** If you add a capability, add an example that exercises
+  it.
 
 ## Design principles to respect
 
