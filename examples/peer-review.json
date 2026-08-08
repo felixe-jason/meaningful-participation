@@ -1,0 +1,41 @@
+{
+  "type": "ParticipationRecord",
+  "mppVersion": "0.1",
+  "id": "urn:uuid:77bf495d-f8ca-4661-9ed2-5b2c499607de",
+  "ecosystem": "urn:mpp:ecosystem:01JQ4C6AQ9H9H30C27Y4HPRT52",
+  "participants": [
+    {
+      "id": "https://orcid.org/0000-0002-1825-0097",
+      "roles": [
+        "reviewer"
+      ]
+    },
+    {
+      "id": "https://journal.example.org/identifiers/editorial-system",
+      "roles": [
+        "asserter"
+      ]
+    }
+  ],
+  "participationType": "https://example.org/mpp/participation-types/peer-review",
+  "participationDescription": "Completed a substantive review of a submitted research paper.",
+  "commitmentClasses": [
+    "effort",
+    "knowledge",
+    "standing"
+  ],
+  "meaningProfile": "https://example.org/mpp/meaning-profiles/verified-peer-review/v1",
+  "participationTimestamp": "2026-07-28T13:15:00Z",
+  "recordCreationTimestamp": "2026-07-28T13:22:14Z",
+  "evidence": [
+    "urn:uuid:8d5c4515-8985-41f3-9061-78f7d0e280ad"
+  ],
+  "context": {
+    "submissionId": "submission-48372",
+    "journal": "Journal of Example Research",
+    "reviewRound": 2
+  },
+  "privacy": {
+    "recordVisibility": "public"
+  }
+}

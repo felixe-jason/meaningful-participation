@@ -1,0 +1,28 @@
+{
+  "type": "ParticipationRecord",
+  "mppVersion": "0.1",
+  "id": "urn:uuid:3d0b6c11-52af-4a90-9f3e-7c1d84a06e52",
+  "commitmentClasses": [
+    "effort"
+  ],
+  "ecosystem": "urn:mpp:ecosystem:01JQ4C6AQ9H9H30C27Y4HPRT52",
+  "participants": [
+    {
+      "id": "participant-123",
+      "roles": [
+        "participant"
+      ]
+    },
+    {
+      "id": "ecosystem-operator",
+      "roles": [
+        "asserter"
+      ]
+    }
+  ],
+  "participationType": "https://example.org/mpp/participation-types/example",
+  "participationDescription": "Completed an instance of recognised Participation.",
+  "meaningProfile": "https://example.org/mpp/meaning-profiles/example/v1",
+  "participationTimestamp": "2026-08-01T12:00:00Z",
+  "recordCreationTimestamp": "2026-08-01T12:00:03Z"
+}
